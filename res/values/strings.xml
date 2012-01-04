@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello From Android!</string>
+    <string name="app_name">WebsocketsExample</string>
+    <string name="server_ip">192.168.2.7:8080/</string>
+    <string name="send_button">Send something!</string>
+        
+
+</resources>
