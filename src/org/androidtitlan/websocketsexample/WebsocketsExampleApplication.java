@@ -12,7 +12,7 @@ public class WebsocketsExampleApplication extends Application {
 		super.onCreate();
 	}
 
-	public static Context getAppContext() {
+	public static Context getWebsocketsExampleApplicationContext() {
 		return context;
 	}
 }

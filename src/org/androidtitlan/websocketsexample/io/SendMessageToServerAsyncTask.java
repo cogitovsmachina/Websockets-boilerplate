@@ -21,14 +21,15 @@ import android.widget.Toast;
 
 public class SendMessageToServerAsyncTask extends
 		AsyncTask<String, Void, String> {
-	private int randomNumber;
-	private Context mContext = WebsocketsExampleApplication.getAppContext();
+	private double randomNumber;
+	private Context mContext = WebsocketsExampleApplication.getWebsocketsExampleApplicationContext();
 	private String mMessage = mContext.getString(R.string.hello);
 	private String serverIp = mContext.getString(R.string.server_ip);
 
 	private URI url;
+	private String result;
 
-	public SendMessageToServerAsyncTask(String message, int randomNumber,
+	public SendMessageToServerAsyncTask(String message, double randomNumber,
 			Context context) {
 		this.mMessage = message;
 		this.randomNumber = randomNumber;
@@ -72,12 +73,12 @@ public class SendMessageToServerAsyncTask extends
 		} catch (URISyntaxException use) {
 			use.printStackTrace();
 		}
-		return null;
+		return mMessage;
 	}
 
 	@Override
 	protected void onPostExecute(String result) {
-		Toast.makeText(mContext, "Message sent:", Toast.LENGTH_LONG).show();
+		Toast.makeText(mContext, "Message sent: " + mMessage, Toast.LENGTH_LONG).show();
 	}
 
 }

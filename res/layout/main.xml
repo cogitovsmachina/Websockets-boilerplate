@@ -4,11 +4,17 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
+    <EditText
+        android:id="@+id/sendtext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_send" />
+
     <Button
         android:id="@+id/sendbutton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/send_button"
-        android:onClick="sendMessage" />
+        android:onClick="sendMessage"
+        android:text="@string/send_button" />
 
 </LinearLayout>

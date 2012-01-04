@@ -5,6 +5,7 @@
     <string name="app_name">WebsocketsExample</string>
     <string name="server_ip">192.168.2.7:8080/</string>
     <string name="send_button">Send something!</string>
+    <string name="hint_send">Enter something</string>
         
 
 </resources>
